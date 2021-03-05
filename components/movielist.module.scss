@@ -1,0 +1,29 @@
+.movielist {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.moviecard {
+  padding: 2rem 0;
+  flex: 1 0 300px;
+  height: 169px;
+}
+
+.moviecard-link {
+  margin-bottom: 2rem;
+  position: relative;
+  display: block;
+  height: 100%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transition: transform 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.moviecard-link:hover,
+.moviecard-link:focus {
+  transform: scale(1.2);
+  z-index: 3;
+}
